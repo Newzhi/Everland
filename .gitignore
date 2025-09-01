@@ -1,5 +1,4 @@
 # 忽略 Everland_GameOrigin 文件夹
-Everland_GameOrigin/
 
 # 注意：大型文件（3D模型、纹理、音频、视频）现在使用 Git LFS 管理
 # 相关配置请查看 .gitattributes 文件
