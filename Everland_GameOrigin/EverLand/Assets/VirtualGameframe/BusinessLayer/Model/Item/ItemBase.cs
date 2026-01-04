@@ -1,18 +1,46 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-public class ItemBase : MonoBehaviour
+using QFramework;
+
+namespace VirtualGameframe.BusinessLayer.Model.Item
 {
-    // Start is called before the first frame update
-    void Start()
+    public class ItemBase : IModel
     {
-        
-    }
+        private int _itemID;
+        private string _itemName;
+        private string _itemDescription;
+        private string _iconUrl;
+        private string _itemQuality;
+        private string _itemPrice;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public ItemBase()
+        {
+            
+        }
+
+        public override string ToString()
+        {
+            return _itemName;
+        }
+
+        public void SetArchitecture(IArchitecture architecture)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public IArchitecture GetArchitecture()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public bool Initialized { get; set; }
+        public void Init()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Deinit()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
